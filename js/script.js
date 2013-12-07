@@ -1,4 +1,4 @@
-function init() {
+function initGraph() {
     var sigInst = sigma.init(document.getElementById("graph")).drawingProperties({
         defaultLabelColor: "#fff",
         defaultLabelSize: 14,
@@ -73,11 +73,15 @@ function init() {
         sigInst.position(0,0,1).draw();
     },true);
 
+    document.getElementById('search').addEventListener('click', function() {
+        
+    });
+
     sigInst.draw();
 }
 
 if(document.addEventListener) {
     document.addEventListener("DOMContentLoaded", init, false);
 } else {
-    window.onload = init;
+    window.onload = initGraph;
 }

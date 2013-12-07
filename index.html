@@ -29,15 +29,40 @@
     </div>
 
     <div class="row">
-        <div class="small-12 medium-12 large-12 columns">
-            <a id="layout" href="#" class="button tiny radius">Start Layout</a>
-            <a id="rescale" href="#" class="button tiny radius">Rescale Graph</a>
+        <div class="large-8 columns">
+            <form>
+                <div class="row collapse">
+                    <div class="large-10 columns">
+                        <input type="text" placeholder="Author's name">
+                    </div>
+                    <div class="large-2 columns">
+                        <a id="search" href="#" class="button small postfix">Search</a>
+                    </div>
+                </div>
+            </form>
         </div>
+        <div class="large-4 columns text-right">
+            <a id="layout" href="#" class="button small">Start Layout</a>
+            <a id="rescale" href="#" class="button small">Rescale Graph</a>
+        </div>
+    </div>
+
+    <div class="row">
         <div class="small-12 medium-12 large-12 columns">
             <div id="graph"></div>
         </div>
     </div>
 
+    <div class="row">
+        <div class="small-12 medium-12 large-12 columns">
+            <p>
+                <small>
+                This website and its source code is licensed under the <a href="LICENSE.txt">GPL license</a>.
+                The library <a href="http://sigmajs.org/">Sigma.js</a> is used to draw the graphs.
+                </small>
+            </p>
+        </div>
+    </div>
     <script src="js/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script>
