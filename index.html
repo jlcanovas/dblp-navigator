@@ -1,0 +1,49 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DBLP navigator</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/modernizr.js"></script>
+  </head>
+  <body>
+    
+    <div class="row">
+      <div class="large-12 columns">
+          <h1 class="text-center">DBLP Navigator</h1>
+          <p>Welcome,</p>
+          <p>
+              This project was created as an excuse to play (and train) a bit with JavaScript. And also with Foundation (after using Bootstrap several times
+              I wanted to compare them).
+          </p>
+          <p>
+              The tool will allow you to generate some graphs from DBLP data.
+          </p>
+          <p>Enjoy,</p>
+          <p><a href="http://github.com/jlcanovas">Javier Canovas</a></p>
+          <hr>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="small-12 medium-12 large-12 columns">
+            <a id="layout" href="#" class="button radius small">Start Layout</a>
+            <a id="rescale" href="#" class="button radius small">Rescale Graph</a>
+        </div>
+        <div class="small-12 medium-12 large-12 columns">
+            <div id="graph"></div>
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <script src="js/sigma.js/sigma.min.js"></script>
+    <script src="js/sigma.js/sigma.forceatlas2.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
