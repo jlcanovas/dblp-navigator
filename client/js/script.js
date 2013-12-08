@@ -75,9 +75,12 @@ function initGraph() {
 
     document.getElementById('search').addEventListener('click', function() {
         var searchTopic = document.getElementById('topic').value;
+        dataToSend = $.param({ authorName : searchTopic });
+
         $.ajax({
             url : "/search",
-            type : "GET",
+            type : "POST",
+            data : dataToSend,
             dataType : "json",
             crossDomain : true,
             success : function(data) {
