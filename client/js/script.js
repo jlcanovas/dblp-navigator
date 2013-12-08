@@ -76,9 +76,9 @@ function initGraph() {
     document.getElementById('search').addEventListener('click', function() {
         var searchTopic = document.getElementById('topic').value;
         $.ajax({
-            url : "http://dblp.uni-trier.de/search/author?xauthor=Schek",
+            url : "/search",
             type : "GET",
-            dataType : "xml",
+            dataType : "json",
             crossDomain : true,
             success : function(data) {
                 console.log(data);
